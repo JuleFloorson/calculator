@@ -36,3 +36,12 @@ function clear() {
 }
 
 calculatorClear.addEventListener("click", clear);
+
+function addInputEventListener(calculatorInput) {
+  function handleCalculatorInputClick() {
+    calculatorOutput.value = calculatorInput.innerText;
+  }
+
+  calculatorInput.addEventListener("click", handleCalculatorInputClick);
+}
+calculatorInput.forEach(addInputEventListener);
