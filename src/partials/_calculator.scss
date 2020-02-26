@@ -1,16 +1,15 @@
 .calculator {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  height: 400px;
-  width: 300px;
   border: 3px solid rgb(16, 27, 121);
+  width: 400px;
+  height: 600px;
 }
 
 .calculator__output {
-  flex-basis: 100%;
-  flex-grow: 1;
   background-color: rgb(2, 196, 255);
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   margin: 0px;
   padding: 0px;
@@ -20,11 +19,38 @@
 }
 
 .calculator__input {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 4);
   background-color: rgb(3, 67, 141);
   color: white;
   font-size: 30px;
   padding: 0;
+}
+
+.calculator__operator {
+  flex-basis: calc(100% / 4);
+  font-size: 30px;
+  padding: 0;
+  background-color: rgb(26, 26, 94);
+  color: white;
+}
+.calculator__delete {
+  flex-basis: calc(100% / 4);
+  font-size: 30px;
+  padding: 0;
+  background-color: rgb(26, 26, 94);
+  color: white;
+}
+
+.calculator__result {
+  flex-basis: calc(100% / 4);
+  font-size: 30px;
+  padding: 0;
+  background-color: rgb(26, 26, 94);
+  color: white;
+}
+
+.calculator__input--null {
+  flex-grow: 2;
 }
 .calculator__input:hover {
   background-color: cornflowerblue;
