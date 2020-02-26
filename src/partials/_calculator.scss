@@ -37,7 +37,7 @@
   flex-basis: calc(100% / 4);
   font-size: 30px;
   padding: 0;
-  background-color: rgb(26, 26, 94);
+  background-color: black;
   color: white;
 }
 
@@ -51,6 +51,15 @@
 
 .calculator__input--null {
   flex-grow: 2;
+}
+.calculator__result:hover {
+  background-color: rgb(40, 115, 255);
+}
+.calculator__delete:hover {
+  background-color: grey;
+}
+.calculator__operator:hover {
+  background-color: rgb(40, 115, 255);
 }
 .calculator__input:hover {
   background-color: cornflowerblue;
