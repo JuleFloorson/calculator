@@ -1,10 +1,12 @@
-import { add, subtract, multiply, divide, calculate } from "./math.js";
+import { calculate } from "./math.js";
+import { appendParagraph } from "./elements.js";
 
 const calculatorOutput = document.querySelector(".calculator__output");
 const calculatorInput = document.querySelectorAll(".calculator__input");
 const calculatorResult = document.querySelector(".calculator__result");
 const calculatorClear = document.querySelector(".calculator__delete");
 const calculatorOperators = document.querySelectorAll(".calculator__operator");
+const logs = document.querySelector(".bodylog");
 
 let numberOne = 0;
 let numberTwo = 0;
@@ -16,13 +18,10 @@ let operator = "";
 //calculatorOutput.value = add(numberOne, numberTwo);
 function handleResultClick() {
   numberTwo = Number(calculatorOutput.value);
-  calculatorOutput.value = calculate(numberOne, numberTwo, operator);
-  console.log(
-    "handleResultClick",
-    numberOne,
-    numberTwo,
-    calculatorOutput.value
-  );
+  const result = calculate(numberOne, numberTwo, operator);
+  const text = `${numberOne} ${operator} ${numberTwo} = ${result}`;
+  appendParagraph(text, logs);
+  calculatorOutput.value = result;
 }
 calculatorResult.addEventListener("click", handleResultClick);
 
