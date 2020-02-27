@@ -7,32 +7,40 @@
     <link rel="stylesheet" href="dist/styles.css" />
   </head>
   <body>
-    <div class="calculator">
-      <input type="text" class="calculator__output" />
-      <button class="calculator__delete">AC</button>
-      <button class="calculator__operator">±</button>
-      <button class="calculator__operator">%</button>
-      <button class="calculator__operator">/</button>
-      <button class="calculator__input">7</button>
-      <button class="calculator__input">8</button>
-      <button class="calculator__input">9</button>
-      <button class="calculator__operator">*</button>
-      <button class="calculator__input">4</button>
-      <button class="calculator__input">5</button>
-      <button class="calculator__input">6</button>
-      <button class="calculator__operator">-</button>
-      <button class="calculator__input">1</button>
-      <button class="calculator__input">2</button>
-      <button class="calculator__input">3</button>
-      <button class="calculator__operator">+</button>
-      <button class="calculator__input calculator__input--null">0</button>
-      <button
-        class="calculator__result
+    <div class="calculatorlog">
+      <div class="calculator">
+        <input type="text" class="calculator__output" />
+        <button class="calculator__delete">AC</button>
+        <button class="calculator__operator">±</button>
+        <button class="calculator__operator">%</button>
+        <button class="calculator__operator">/</button>
+        <button class="calculator__input">7</button>
+        <button class="calculator__input">8</button>
+        <button class="calculator__input">9</button>
+        <button class="calculator__operator">*</button>
+        <button class="calculator__input">4</button>
+        <button class="calculator__input">5</button>
+        <button class="calculator__input">6</button>
+        <button class="calculator__operator">-</button>
+        <button class="calculator__input">1</button>
+        <button class="calculator__input">2</button>
+        <button class="calculator__input">3</button>
+        <button class="calculator__operator">+</button>
+        <button class="calculator__input calculator__input--null">0</button>
+        <button
+          class="calculator__result
       "
-      >
-        =
-      </button>
+          id="clicklog"
+        >
+          =
+        </button>
+      </div>
+      <div class="logs">
+        <div class="toplog"><h2 class="heading">Log</h2></div>
+        <div class="bodylog"></div>
+      </div>
     </div>
+
     <script src="src/partials/calculator.js" type="module"></script>
   </body>
 </html>
