@@ -4,7 +4,7 @@ const calculatorOutput = document.querySelector(".calculator__output");
 const calculatorInput = document.querySelectorAll(".calculator__input");
 const calculatorResult = document.querySelector(".calculator__result");
 const calculatorClear = document.querySelector(".calculator__delete");
-const calculatorOperator = document.querySelector(".calculator__operator");
+const calculatorOperators = document.querySelectorAll(".calculator__operator");
 
 function add(numberOne, numberTwo) {
   return numberOne + numberTwo;
@@ -40,7 +40,7 @@ calculatorClear.addEventListener("click", clear);
 
 function addInputEventListener(calculatorInput) {
   function handleCalculatorInputClick() {
-    numberOne = Number(calculatorOutput.value);
+    // numberOne = Number(calculatorOutput.value);
     calculatorOutput.value += calculatorInput.innerText;
   }
 
@@ -48,3 +48,5 @@ function addInputEventListener(calculatorInput) {
 }
 
 calculatorInput.forEach(addInputEventListener);
+
+// Operators
