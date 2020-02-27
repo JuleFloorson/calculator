@@ -8,7 +8,7 @@
 }
 
 .calculator__output {
-  background-color: rgb(2, 196, 255);
+  background-color: cornflowerblue;
   font-size: 30px;
   text-align: center;
   margin: 0px;
@@ -51,6 +51,15 @@
 
 .calculator__input--null {
   flex-grow: 2;
+}
+.calculator__result:hover {
+  background-color: cornflowerblue;
+}
+.calculator__delete:hover {
+  background-color: grey;
+}
+.calculator__operator:hover {
+  background-color: cornflowerblue;
 }
 .calculator__input:hover {
   background-color: cornflowerblue;
